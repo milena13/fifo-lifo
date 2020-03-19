@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class QueueExercise {
+public class QueueExercise implements QueueInterface {
 
     private int elementCount;
     private int[] array;
@@ -10,6 +10,11 @@ public class QueueExercise {
         this.elementCount = 0;
     }
 
+    @Override
+    public void displayQueueMessage() {
+        System.out.println("Queue Interface check");
+    }
+    @Override
     public void add(int value) {
         int dest[] = array;
 

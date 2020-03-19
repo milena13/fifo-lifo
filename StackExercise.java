@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class StackExercise {
+public class StackExercise implements StackInterface {
     private int[] array;
     private int elementCount;
 
@@ -10,6 +10,12 @@ public class StackExercise {
         elementCount = 0;
     }
 
+    @Override
+    public void displayStackMessage() {
+        System.out.println("Stack Interface check");
+    }
+
+    @Override
     public void add (int value) {
         int [] dest = new int[array.length+1];
         for (int i = 0; i < array.length; i++) {

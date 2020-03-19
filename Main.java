@@ -6,6 +6,8 @@ public class Main {
 
         QueueExercise q = new QueueExercise(0);
 
+        q.displayQueueMessage();
+
         System.out.println("Queue exercise - add method:");
         q.add(5);
         q.add(10);
@@ -36,6 +38,8 @@ public class Main {
         System.out.println("Second queue array element count: " + s.getElementCount());
 
         StackExercise stack = new StackExercise(0);
+
+        stack.displayStackMessage();
 
         stack.add(3);
         stack.add(5);
