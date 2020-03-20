@@ -45,7 +45,12 @@ public class QueueExercise implements QueueInterface {
     }
 
     public int getElementCount() {
+
         return elementCount;
+    }
+
+    public int addValues (int a, int b) {
+        return a + b;
     }
 }
 
